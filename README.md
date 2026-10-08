@@ -1,6 +1,6 @@
 # 1. Project Name
 
-# RepoGuide
+# RepoEase
 ### Your local AI guide to unfamiliar open-source Python codebases
 
 > Hacktober Fest | Open Source AI Hackathon | Qualifier Submission
@@ -47,13 +47,13 @@ Many beginners give up before their first contribution. This is especially painf
 
 # 3. Project Overview
 
-**RepoGuide** is a locally running, tool-using AI agent that helps new contributors understand unfamiliar Python repositories quickly. The user gives it a GitHub repository URL. RepoGuide downloads the repository, builds a searchable semantic index of the code, and then offers three things:
+**RepoEase** is a locally running, tool-using AI agent that helps new contributors understand unfamiliar Python repositories quickly. The user gives it a GitHub repository URL. RepoGuide downloads the repository, builds a searchable semantic index of the code, and then offers three things:
 
 1. A plain-language **overview** of what the project does and how its folders are organized.
 2. A **question-answering chat** over the code, where every answer cites the exact files it came from.
 3. A **starter-issue guide** that finds beginner-friendly GitHub issues and explains, step by step, where to look in the code to fix them.
 
-RepoGuide uses open-source software and open-weight models with permissive licenses, and all of them run on the user's own machine. AI inference and the indexed source code stay local; the only network calls are to GitHub to fetch a repository and its issues.
+RepoEase uses open-source software and open-weight models with permissive licenses, and all of them run on the user's own machine. AI inference and the indexed source code stay local; the only network calls are to GitHub to fetch a repository and its issues.
 
 **Supported scope:** Python repositories up to a size limit (default: a few hundred files). For larger repositories, RepoGuide indexes the most relevant folders and tells the user clearly what was skipped.
 
@@ -86,15 +86,15 @@ The LLM is instructed to answer only from retrieved code, and a set of grounding
 
 # 6. Target Users / Use Case
 
-| User | Need | How RepoGuide helps |
+| User | Need | How RepoEase helps |
 |---|---|---|
 | First-time open-source contributors (students) | Find a starting point in a large repo | Overview plus starter issues with a plan |
 | Hacktoberfest participants | Pick and fix an issue fast | Issue-to-code mapping |
 | Developers joining a new team | Understand an unfamiliar codebase | Local Q&A with file citations (private repos: future scope) |
-| Maintainers | Reduce repeated "where is X?" questions | Share RepoGuide as an onboarding aid |
+| Maintainers | Reduce repeated "where is X?" questions | Share RepoEase as an onboarding aid |
 
 **Example use case:**
-A student pastes the URL of a small open-source Python project. RepoGuide shows a summary, the student asks "Where is the configuration loaded?", gets an answer citing `config/loader.py`, then opens the starter-issues tab and picks an issue with a suggested plan.
+A student pastes the URL of a small open-source Python project. RepoEase shows a summary, the student asks "Where is the configuration loaded?", gets an answer citing `config/loader.py`, then opens the starter-issues tab and picks an issue with a suggested plan.
 
 ---
 
